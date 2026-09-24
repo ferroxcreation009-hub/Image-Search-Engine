@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Image Search</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <form id="search-form">
+    <input id="search-box" type="text" placeholder="Search for images..." autocomplete="off" />
+    <button type="submit">Search</button>
+  </form>
+
+  <p id="status-message"></p>
+
+  <div id="search-result"></div>
+
+  <button id="show-more-btn" style="display:none;">Show More</button>
+
+  <!-- config.js holds the real key and is gitignored — never commit it.
+       If config.js is missing (e.g. right after cloning), config.sample.js
+       still loads so the page doesn't hard-crash; script.js checks for a
+       real key and shows a friendly message instead. -->
+  <script src="config.js" onerror="document.currentScript.src='config.sample.js'"></script>
+  <script src="first.js"></script>
+</body>
+</html>
